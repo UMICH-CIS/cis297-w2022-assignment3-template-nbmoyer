@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BankApplication
 {
@@ -13,7 +9,12 @@ namespace BankApplication
         }
     }
 
-    class Account
+  abstract class account
+    {
+        public abstract void Credit(decimal credit);
+        public abstract void Debit(decimal debit);
+    }
+    class Account : account
     {
         private decimal balance;
         public Account(decimal accountBalance)
@@ -27,13 +28,12 @@ namespace BankApplication
                 throw new Exception("Initial balance cannot be less than zero");
             }
         }
-
-        public void Credit(decimal credit)
+        public override void Credit(decimal credit)
         {
             balance += credit;
         }
 
-        public void Debit(decimal debit)
+        public override void Debit(decimal debit)
         {
             if (debit <= balance)
             {
@@ -51,19 +51,52 @@ namespace BankApplication
         }
     }
 
-    class savingsaccount : account
+    class SavingsAccount : Account
     {
-        private decimal interestrate;
+        private decimal interestRate;
         private decimal balance;
-        public savingsaccount(decimal intrate, account balance)
+        public SavingsAccount(decimal accountBalance, decimal intRate) : base(accountBalance)
         {
-            interestrate = intrate;
-            balance = balance.balance;
+            balance = accountBalance;
+            interestRate = intRate;
+        }
+        public decimal CalculateInterest()
+        {
+            decimal earned;
+            earned = interestRate * Balance;
+            return earned;
         }
     }
 
-    class checkingaccount : account
+    class CheckingAccount : Account
     {
+        private decimal trFee;
+        private decimal balance;
+
+        public CheckingAccount(decimal accountBalance, decimal transactionFee) : base(accountBalance)
+        {
+            balance = accountBalance;
+            trFee = transactionFee;
+        }
+
+        public override void Credit(decimal credit)
+        {
+            balance += credit;
+            balance -= trFee;
+        }
+
+        public override void Debit(decimal debit)
+        {
+            if (debit <= Balance)
+            {
+                balance -= debit;
+                balance -= trFee;
+            }
+            else
+            {
+                Console.WriteLine("Debit amount exceeded account balance.");
+            }
+        }
 
     }
 }
