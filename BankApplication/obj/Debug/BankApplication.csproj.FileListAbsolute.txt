@@ -6,3 +6,11 @@ C:\Users\Nathan\Dropbox\My PC (Nathan-L)\Documents\GitHub\cis297-w2022-assignmen
 C:\Users\Nathan\Dropbox\My PC (Nathan-L)\Documents\GitHub\cis297-w2022-assignment3-template-nbmoyer\BankApplication\obj\Debug\BankApplication.csproj.CoreCompileInputs.cache
 C:\Users\Nathan\Dropbox\My PC (Nathan-L)\Documents\GitHub\cis297-w2022-assignment3-template-nbmoyer\BankApplication\obj\Debug\BankApplication.exe
 C:\Users\Nathan\Dropbox\My PC (Nathan-L)\Documents\GitHub\cis297-w2022-assignment3-template-nbmoyer\BankApplication\obj\Debug\BankApplication.pdb
+C:\Users\Nathan\Documents\GitHub\cis297-w2022-assignment3-template-nbmoyer\BankApplication\bin\Debug\BankApplication.exe.config
+C:\Users\Nathan\Documents\GitHub\cis297-w2022-assignment3-template-nbmoyer\BankApplication\bin\Debug\BankApplication.exe
+C:\Users\Nathan\Documents\GitHub\cis297-w2022-assignment3-template-nbmoyer\BankApplication\bin\Debug\BankApplication.pdb
+C:\Users\Nathan\Documents\GitHub\cis297-w2022-assignment3-template-nbmoyer\BankApplication\obj\Debug\BankApplication.csproj.AssemblyReference.cache
+C:\Users\Nathan\Documents\GitHub\cis297-w2022-assignment3-template-nbmoyer\BankApplication\obj\Debug\BankApplication.csproj.SuggestedBindingRedirects.cache
+C:\Users\Nathan\Documents\GitHub\cis297-w2022-assignment3-template-nbmoyer\BankApplication\obj\Debug\BankApplication.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\Documents\GitHub\cis297-w2022-assignment3-template-nbmoyer\BankApplication\obj\Debug\BankApplication.exe
+C:\Users\Nathan\Documents\GitHub\cis297-w2022-assignment3-template-nbmoyer\BankApplication\obj\Debug\BankApplication.pdb
